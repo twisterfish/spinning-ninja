@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2024-10-03T18:16:12Z</date>
+	<key>Application Version</key><string>12.13.3.2</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/G:/Music/iTunes/</string>
+	<key>Library Persistent ID</key><string>9BC1546DD8FC30BB</string>
+	<key>Tracks</key>
+	<dict>
+		<key>80069</key>
+		<dict>
+			<key>Track ID</key><integer>80069</integer>
+			<key>Name</key><string>C'mon C'mon [Album Version]</string>
+			<key>Artist</key><string>The Von Bondies</string>
+			<key>Album</key><string>C'mon, C'mon [DMD Single]</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4703566</integer>
+			<key>Total Time</key><integer>133616</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>BPM</key><integer>147</integer>
+			<key>Date Modified</key><date>2011-06-24T21:03:26Z</date>
+			<key>Date Added</key><date>2011-03-16T05:32:03Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>96</integer>
+			<key>Play Date</key><integer>3792669410</integer>
+			<key>Play Date UTC</key><date>2024-03-07T23:16:50Z</date>
+			<key>Skip Count</key><integer>28</integer>
+			<key>Skip Date</key><date>2019-10-24T06:45:53Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Artist</key><string>Von Bondies</string>
+			<key>Persistent ID</key><string>FFC5769820C9EFFA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Napster/The%20Von%20Bondies/C'mon,%20C'mon%20%5BDMD%20Single%5D/The%20Von%20Bondies%20-%20Cmon%20Cmon%20%5BAlbum%20Version%5D.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>83389</key>
+		<dict>
+			<key>Track ID</key><integer>83389</integer>
+			<key>Name</key><string>Alive (Alesso Remix)</string>
+			<key>Artist</key><string>Dirty South &#38; Thomas Gold ft Kate Elsworth</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14558804</integer>
+			<key>Total Time</key><integer>354977</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>BPM</key><integer>128</integer>
+			<key>Date Modified</key><date>2015-09-15T00:15:46Z</date>
+			<key>Date Added</key><date>2012-08-11T18:42:56Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>42</integer>
+			<key>Play Date</key><integer>3607338120</integer>
+			<key>Play Date UTC</key><date>2018-04-23T21:22:00Z</date>
+			<key>Skip Count</key><integer>7</integer>
+			<key>Skip Date</key><date>2018-11-27T07:58:29Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>132E1E05657AA95F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2012/August/Dirty%20South%20&#38;%20Thomas%20Gold%20ft%20Kate%20Elsworth%20-%20Alive%20(Alesso%20Remix)%20www.synapsemusic.net.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>84069</key>
+		<dict>
+			<key>Track ID</key><integer>84069</integer>
+			<key>Name</key><string>Beautiful Day (Mat Zo Remix)</string>
+			<key>Artist</key><string>U2</string>
+			<key>Album</key><string>Beautiful Day (Remixes)</string>
+			<key>Genre</key><string>Trance</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12669147</integer>
+			<key>Total Time</key><integer>316708</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>BPM</key><integer>132</integer>
+			<key>Date Modified</key><date>2013-04-07T15:11:38Z</date>
+			<key>Date Added</key><date>2013-04-07T17:12:30Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>56</integer>
+			<key>Play Date</key><integer>3806335241</integer>
+			<key>Play Date UTC</key><date>2024-08-13T02:20:41Z</date>
+			<key>Skip Count</key><integer>33</integer>
+			<key>Skip Date</key><date>2024-03-24T00:42:55Z</date>
+			<key>Persistent ID</key><string>D6CB175D4D8D374D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2013/April/U2-Beautiful_Day_Mat_Zo_Remix(mp3plate.com).mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>86973</key>
+		<dict>
+			<key>Track ID</key><integer>86973</integer>
+			<key>Name</key><string>Undercover Martyn</string>
+			<key>Artist</key><string>Two Door Cinema Club</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2755202</integer>
+			<key>Total Time</key><integer>168228</integer>
+			<key>Year</key><integer>2010</integer>
+			<key>BPM</key><integer>160</integer>
+			<key>Date Modified</key><date>2016-02-29T23:42:38Z</date>
+			<key>Date Added</key><date>2016-02-29T22:51:52Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>23</integer>
+			<key>Play Date</key><integer>3810629371</integer>
+			<key>Play Date UTC</key><date>2024-10-01T19:09:31Z</date>
+			<key>Skip Count</key><integer>41</integer>
+			<key>Skip Date</key><date>2024-09-15T05:57:11Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2E23744CD640B202</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2016/February/Undercover%20Martyn_5319206_soundcloud.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>113319</key>
+		<dict>
+			<key>Track ID</key><integer>113319</integer>
+			<key>Name</key><string>Ain't It Different (Original Mix)</string>
+			<key>Artist</key><string>Headie One, AJ Tracey, Stormzy</string>
+			<key>Album</key><string>EDNA</string>
+			<key>Work</key><string>Relentless Records</string>
+			<key>Genre</key><string>Trap / Hip-Hop / R&#38;B</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8005832</integer>
+			<key>Total Time</key><integer>196257</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2020</integer>
+			<key>BPM</key><integer>154</integer>
+			<key>Date Modified</key><date>2021-10-13T22:45:16Z</date>
+			<key>Date Added</key><date>2021-10-13T22:48:02Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>43</integer>
+			<key>Play Date</key><integer>3810629907</integer>
+			<key>Play Date UTC</key><date>2024-10-01T19:18:27Z</date>
+			<key>Skip Count</key><integer>10</integer>
+			<key>Skip Date</key><date>2024-02-15T22:52:54Z</date>
+			<key>Release Date</key><date>2020-01-01T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7A542A435C7AB2FF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2021/10%20-%20October/14352978_Ain't%20It%20Different_(Original%20Mix).mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117517</key>
+		<dict>
+			<key>Track ID</key><integer>117517</integer>
+			<key>Name</key><string>Alibi (feat. Rudimental) (Shapes VIP mix)</string>
+			<key>Artist</key><string>Rudimental, Ella Henderson</string>
+			<key>Album</key><string>Alibi (feat. Rudimental) [Shapes VIP mix]</string>
+			<key>Work</key><string>Atlantic Records UK</string>
+			<key>Genre</key><string>Dance / Electro Pop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8705108</integer>
+			<key>Total Time</key><integer>182125</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>174</integer>
+			<key>Date Modified</key><date>2024-02-29T23:12:00Z</date>
+			<key>Date Added</key><date>2024-02-29T23:11:43Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>7</integer>
+			<key>Play Date</key><integer>3810630374</integer>
+			<key>Play Date UTC</key><date>2024-10-01T19:26:14Z</date>
+			<key>Skip Count</key><integer>6</integer>
+			<key>Skip Date</key><date>2024-09-05T22:54:24Z</date>
+			<key>Release Date</key><date>2024-02-16T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CE282EF0A3DE34FF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/02%20-%20February/Rudimental,-Ella-Henderson---Alibi-(feat.-Rudimental)-(Shapes-VIP-mix)-87.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117697</key>
+		<dict>
+			<key>Track ID</key><integer>117697</integer>
+			<key>Name</key><string>Summertime Blues (Extended Mix)</string>
+			<key>Artist</key><string>Chris Lake, Nathan Nicholson, Sammy Virji</string>
+			<key>Album</key><string>Summertime Blues</string>
+			<key>Work</key><string>Black Book Records</string>
+			<key>Genre</key><string>Tech House</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14324798</integer>
+			<key>Total Time</key><integer>329613</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>130</integer>
+			<key>Date Modified</key><date>2024-05-09T22:08:38Z</date>
+			<key>Date Added</key><date>2024-05-09T22:09:52Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>8</integer>
+			<key>Play Date</key><integer>3806327200</integer>
+			<key>Play Date UTC</key><date>2024-08-13T00:06:40Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2024-08-08T22:27:29Z</date>
+			<key>Release Date</key><date>2024-04-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E09F1FFEC6D32A7F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/05%20-%20May/Chris-Lake,-Nathan-Nicholson,-Sammy-Virji---Summertime-Blues-(Extended-Mix)-130.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117727</key>
+		<dict>
+			<key>Track ID</key><integer>117727</integer>
+			<key>Name</key><string>Frisson (Original Mix)</string>
+			<key>Artist</key><string>Lauren Mia</string>
+			<key>Album</key><string>Frisson</string>
+			<key>Work</key><string>Ear Porn Music</string>
+			<key>Genre</key><string>Melodic House &#38; Techno</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14075016</integer>
+			<key>Total Time</key><integer>339957</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>127</integer>
+			<key>Date Modified</key><date>2024-05-16T22:13:04Z</date>
+			<key>Date Added</key><date>2024-05-16T22:14:54Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>28</integer>
+			<key>Play Date</key><integer>3810629711</integer>
+			<key>Play Date UTC</key><date>2024-10-01T19:15:11Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2024-08-02T22:45:16Z</date>
+			<key>Release Date</key><date>2024-04-11T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E60C3C76A63ED31A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/05%20-%20May/Lauren-Mia---Frisson-(Original-Mix)-127.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117913</key>
+		<dict>
+			<key>Track ID</key><integer>117913</integer>
+			<key>Name</key><string>girl$ (Layton Giordani Extended Remix)</string>
+			<key>Artist</key><string>Dom Dolla, Layton Giordani, Dom Dolla &#38; Layton Giordani</string>
+			<key>Album</key><string>girl$ (Layton Giordani Extended Remix)</string>
+			<key>Work</key><string>Three Six Zero Recordings/Columbia Records</string>
+			<key>Genre</key><string>Dance / Electro Pop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12456129</integer>
+			<key>Total Time</key><integer>309472</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>134</integer>
+			<key>Date Modified</key><date>2024-07-25T22:46:14Z</date>
+			<key>Date Added</key><date>2024-07-25T22:46:54Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3810207921</integer>
+			<key>Play Date UTC</key><date>2024-09-26T22:05:21Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2024-09-26T21:49:38Z</date>
+			<key>Release Date</key><date>2024-07-19T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>446BD9C9479369D9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/07%20-%20July/Dom-Dolla,-Layton-Giordani---girl$-(Layton-Giordani-Extended-Remix)-134.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117943</key>
+		<dict>
+			<key>Track ID</key><integer>117943</integer>
+			<key>Name</key><string>Ten Toes (Original Mix)</string>
+			<key>Artist</key><string>General Levy, MC Spyda, Eksman, Bru-C</string>
+			<key>Album</key><string>Ten Toes</string>
+			<key>Work</key><string>0207 Def Jam</string>
+			<key>Genre</key><string>Dance / Electro Pop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10888387</integer>
+			<key>Total Time</key><integer>234684</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>174</integer>
+			<key>Date Modified</key><date>2024-08-26T21:10:04Z</date>
+			<key>Date Added</key><date>2024-08-04T06:00:55Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3808748180</integer>
+			<key>Play Date UTC</key><date>2024-09-10T00:36:20Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-20T20:41:21Z</date>
+			<key>Release Date</key><date>2024-05-16T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>310082D9CE73CCC7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/08%20-%20August/General-Levy,-MC-Spyda,-Eksman,-Bru-C---Ten-Toes-(Original-Mix)-87.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117989</key>
+		<dict>
+			<key>Track ID</key><integer>117989</integer>
+			<key>Name</key><string>BACKBONE (Original Mix)</string>
+			<key>Artist</key><string>Chase &#38; Status, Stormzy</string>
+			<key>Album</key><string>BACKBONE</string>
+			<key>Genre</key><string>Dance / Electro Pop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7997737</integer>
+			<key>Total Time</key><integer>166426</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>176</integer>
+			<key>Date Modified</key><date>2024-08-18T05:44:50Z</date>
+			<key>Date Added</key><date>2024-08-18T05:36:42Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3807187440</integer>
+			<key>Play Date UTC</key><date>2024-08-22T23:04:00Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-15T05:44:32Z</date>
+			<key>Release Date</key><date>2024-08-08T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>889445B38938EE45</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/08%20-%20August/Chase-&#38;-Status,-Stormzy---BACKBONE-(Original-Mix)-88.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118039</key>
+		<dict>
+			<key>Track ID</key><integer>118039</integer>
+			<key>Name</key><string>Lioness (Francis Mercier Remix (Extended Mix))</string>
+			<key>Artist</key><string>Swedish House Mafia, Niki &#38; The Dove, Francis Mercier</string>
+			<key>Album</key><string>Lioness (Francis Mercier Remix (Extended Mix))</string>
+			<key>Genre</key><string>Afro House</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>13788968</integer>
+			<key>Total Time</key><integer>315088</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>122</integer>
+			<key>Date Modified</key><date>2024-09-01T06:10:52Z</date>
+			<key>Date Added</key><date>2024-09-01T06:12:25Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3808746251</integer>
+			<key>Play Date UTC</key><date>2024-09-10T00:04:11Z</date>
+			<key>Release Date</key><date>2024-08-23T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2D27B6134EB6E1B1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/08%20-%20August/Swedish-House-Mafia,-Niki-&#38;-The-Dove,-Francis-Mercier---Lioness-(Francis-Mercier-Remix-(Extended-Mix))-122.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118063</key>
+		<dict>
+			<key>Track ID</key><integer>118063</integer>
+			<key>Name</key><string>Meet Again (Original Mix)</string>
+			<key>Artist</key><string>Etherwood, Charlotte Haining</string>
+			<key>Album</key><string>Shoreline</string>
+			<key>Genre</key><string>Drum &#38; Bass</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14872563</integer>
+			<key>Total Time</key><integer>311040</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>175</integer>
+			<key>Date Modified</key><date>2024-09-08T05:33:02Z</date>
+			<key>Date Added</key><date>2024-09-08T05:25:10Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3810540501</integer>
+			<key>Play Date UTC</key><date>2024-09-30T18:28:21Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-15T05:36:42Z</date>
+			<key>Release Date</key><date>2024-08-29T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2D0A6A8AEE2EA4BB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/09%20-%20September/Etherwood,-Charlotte-Haining---Meet-Again-(Original-Mix)-126.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118069</key>
+		<dict>
+			<key>Track ID</key><integer>118069</integer>
+			<key>Name</key><string>Embers (Dorian Craft Remix)</string>
+			<key>Artist</key><string>CamelPhat Shimza Ft. Julia Church</string>
+			<key>Genre</key><string>House</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7300810</integer>
+			<key>Total Time</key><integer>455653</integer>
+			<key>BPM</key><integer>123</integer>
+			<key>Date Modified</key><date>2024-09-08T05:28:32Z</date>
+			<key>Date Added</key><date>2024-09-08T05:25:10Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3810222061</integer>
+			<key>Play Date UTC</key><date>2024-09-27T02:01:01Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-19T21:53:01Z</date>
+			<key>Persistent ID</key><string>72B0AF4DF5EA9F84</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/09%20-%20September/Camelphat_Shimza_Ft_Julia_Church_-_Embers_Dorian_Craft_Remix.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118085</key>
+		<dict>
+			<key>Track ID</key><integer>118085</integer>
+			<key>Name</key><string>That's How I'm Feeling</string>
+			<key>Artist</key><string>Jack White</string>
+			<key>Album Artist</key><string>Jack White</string>
+			<key>Composer</key><string>Jack White</string>
+			<key>Album</key><string>No Name</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Size</key><integer>6935860</integer>
+			<key>Total Time</key><integer>191813</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>127</integer>
+			<key>Date Modified</key><date>2024-09-12T22:00:50Z</date>
+			<key>Date Added</key><date>2024-09-12T21:51:02Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809006518</integer>
+			<key>Play Date UTC</key><date>2024-09-13T00:21:58Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2024-09-26T21:19:46Z</date>
+			<key>Release Date</key><date>2024-08-02T12:00:00Z</date>
+			<key>Normalization</key><integer>7270</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>D2B7937FADD9F820</string>
+			<key>Track Type</key><string>File</string>
+			<key>Purchased</key><true/>
+			<key>Location</key><string>file://localhost/G:/Music/iTunes/Jack%20White/No%20Name/03%20That's%20How%20I'm%20Feeling.m4a</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118095</key>
+		<dict>
+			<key>Track ID</key><integer>118095</integer>
+			<key>Name</key><string>So High (Hot Since 82 Remix)</string>
+			<key>Artist</key><string>Shadow Child</string>
+			<key>Album</key><string>Knee Deep In Louise/So High Remixes</string>
+			<key>Work</key><string>Moda Black</string>
+			<key>Genre</key><string>Deep House</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>18621734</integer>
+			<key>Total Time</key><integer>464352</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2012</integer>
+			<key>BPM</key><integer>122</integer>
+			<key>Date Modified</key><date>2024-09-15T04:32:14Z</date>
+			<key>Date Added</key><date>2024-09-15T04:37:49Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-15T04:37:55Z</date>
+			<key>Release Date</key><date>2012-01-01T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>697081A3CB0C1EA5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/09%20-%20September/Shadow-Child---So-High-(Hot-Since-82-Remix)-122.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118097</key>
+		<dict>
+			<key>Track ID</key><integer>118097</integer>
+			<key>Name</key><string>Good Life (Extended Mix)</string>
+			<key>Artist</key><string>Inner City, Danny Lees, Morgan Seatree</string>
+			<key>Album</key><string>Good Life</string>
+			<key>Genre</key><string>House</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12192092</integer>
+			<key>Total Time</key><integer>285387</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>135</integer>
+			<key>Date Modified</key><date>2024-09-15T04:37:04Z</date>
+			<key>Date Added</key><date>2024-09-15T04:37:49Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3810630192</integer>
+			<key>Play Date UTC</key><date>2024-10-01T19:23:12Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2024-09-15T06:17:11Z</date>
+			<key>Release Date</key><date>2024-09-13T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>019494119E1E5718</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/G:/Music/Downloads/Downloads/2024/09%20-%20September/Inner-City,-Danny-Lees,-Morgan-Seatree---Good-Life-(Extended-Mix)-135.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118099</key>
+		<dict>
+			<key>Track ID</key><integer>118099</integer>
+			<key>Name</key><string>Husk</string>
+			<key>Artist</key><string>Men I Trust</string>
+			<key>Album Artist</key><string>Men I Trust</string>
+			<key>Composer</key><string>Jessy Caron, Emmanuelle Proulx &#38; Dragos Chiriac</string>
+			<key>Album</key><string>Husk - Single</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Size</key><integer>7592151</integer>
+			<key>Total Time</key><integer>204651</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>1</integer>
+			<key>Year</key><integer>2024</integer>
+			<key>BPM</key><integer>129</integer>
+			<key>Date Modified</key><date>2024-09-15T05:52:18Z</date>
+			<key>Date Added</key><date>2024-09-15T05:03:22Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3810208333</integer>
+			<key>Play Date UTC</key><date>2024-09-26T22:12:13Z</date>
+			<key>Release Date</key><date>2024-09-10T12:00:00Z</date>
+			<key>Normalization</key><integer>2048</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Husk - Single</string>
+			<key>Sort Artist</key><string>Men I Trust</string>
+			<key>Sort Name</key><string>Husk</string>
+			<key>Persistent ID</key><string>EE173ECB97769307</string>
+			<key>Track Type</key><string>File</string>
+			<key>Purchased</key><true/>
+			<key>Location</key><string>file://localhost/G:/Music/iTunes/Men%20I%20Trust/Husk%20-%20Single/01%20Husk.m4a</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118101</key>
+		<dict>
+			<key>Track ID</key><integer>118101</integer>
+			<key>Name</key><string>I Stand On That (feat. Joyner Lucas &#38; T.I.)</string>
+			<key>Artist</key><string>E-40</string>
+			<key>Album Artist</key><string>E-40</string>
+			<key>Composer</key><string>Earl T Stevens</string>
+			<key>Album</key><string>I Stand On That (feat. Joyner Lucas &#38; T.I.) - Single</string>
+			<key>Genre</key><string>Hip-Hop/Rap</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Size</key><integer>10032641</integer>
+			<key>Total Time</key><integer>284171</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>1</integer>
+			<key>Year</key><integer>2020</integer>
+			<key>BPM</key><integer>153</integer>
+			<key>Date Modified</key><date>2024-09-15T05:50:22Z</date>
+			<key>Date Added</key><date>2024-09-15T05:10:32Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3809953919</integer>
+			<key>Play Date UTC</key><date>2024-09-23T23:31:59Z</date>
+			<key>Release Date</key><date>2020-10-30T12:00:00Z</date>
+			<key>Normalization</key><integer>2630</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>I Stand On That (feat. Joyner Lucas &#38; T.I.) - Single</string>
+			<key>Sort Artist</key><string>E-40</string>
+			<key>Sort Name</key><string>I Stand On That (feat. Joyner Lucas &#38; T.I.)</string>
+			<key>Persistent ID</key><string>43A32A9EF25CD9D5</string>
+			<key>Explicit</key><true/>
+			<key>Track Type</key><string>File</string>
+			<key>Purchased</key><true/>
+			<key>Location</key><string>file://localhost/G:/Music/iTunes/E-40/I%20Stand%20On%20That%20(feat.%20Joyner%20Lucas%20&#38;%20T_/01%20I%20Stand%20On%20That%20(feat.%20Joyner%20Luc.m4a</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Equinox 09-15-24</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>263180</integer>
+			<key>Playlist Persistent ID</key><string>72E1A0E19B2D6960</string>
+			<key>Parent Persistent ID</key><string>10AA2DA79628149D</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>86973</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117727</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>113319</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118097</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117517</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117697</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>80069</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117913</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118085</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>84069</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118099</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118095</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118101</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>83389</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118063</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117989</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118039</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117943</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118069</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
