@@ -3,7 +3,6 @@
 #######################################################################
 
 import plistlib
-import json
 from pathlib import Path
 
 ####################################################################### 
@@ -11,7 +10,7 @@ from pathlib import Path
 #######################################################################
 
 count = 0 # This is a counter for the number of tracks processed
-write_csv = True # Set to True to write to a CSV file
+write_csv = False # Set to True to write to a CSV file
 printout = False # Set to True to print to the console
 
 #######################################################################
@@ -22,7 +21,7 @@ trackLine = "" # This is the line that will be written to the CSV file
 csv_file_path = None # This is the file that will be written to if used
 
 # This is the file that will be read from - add your own path here
-plist_file_path = Path('../data/iTunes-Library.xml')
+plist_file_path = Path('../data/Equinox-09-15-24.xml')
 
 # If the flag is set to write to a CSV file, this is the file that will 
 # be written to - add your own path here
