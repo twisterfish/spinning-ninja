@@ -1,18 +1,42 @@
+#######################################################################
+# Python script to parse an iTunes XML file and output the data to a CSV file
+#######################################################################
+
 import plistlib
 import json
 from pathlib import Path
 
+####################################################################### 
+# These are global variables used to control the output of the script
+#######################################################################
 
-file_path = Path('../data/iTunes-Library.xml')
-fileExport = open('../data/iTunes-Export.csv', 'a')
+count = 0 # This is a counter for the number of tracks processed
+write_csv = True # Set to True to write to a CSV file
+printout = False # Set to True to print to the console
 
-trackLine = "TrackName,ArtistName,Album,DateAdded,BPM\r\n"
-fileExport.write(trackLine)
-trackLine = ""
+#######################################################################
+# These are the paths to the files that will be used in the script
+#######################################################################
 
-count = 0
+trackLine = "" # This is the line that will be written to the CSV file
+csv_file_path = None # This is the file that will be written to if used
 
-with open(file_path, 'rb') as infile:
+# This is the file that will be read from - add your own path here
+plist_file_path = Path('../data/iTunes-Library.xml')
+
+# If the flag is set to write to a CSV file, this is the file that will 
+# be written to - add your own path here
+if write_csv:
+    csv_file_path = open('../data/iTunes-Export.csv', 'a')
+    trackLine = "TrackName,ArtistName,Album,DateAdded,Time,BPM\r\n"
+    csv_file_path.write(trackLine)
+    trackLine = ""
+
+#######################################################################
+# This is the main part of the script that reads the plist file
+#######################################################################
+
+with open(plist_file_path, 'rb') as infile:
     plist = plistlib.load(infile)
     
     #print(plist["Tracks"])
@@ -21,45 +45,91 @@ with open(file_path, 'rb') as infile:
         count += 1      
 
         if "Name" in plist["Tracks"][key]:
-            print("Track Name: " + plist["Tracks"][key]["Name"])
-            trackLine += "\"" + plist["Tracks"][key]["Name"] + "\","
+            if printout:
+                print("Track Name: " + plist["Tracks"][key]["Name"])
+            if write_csv:
+                trackLine += "\"" + plist["Tracks"][key]["Name"] + "\","
         else:    
-            print("Track Name: N/A")
-            trackLine += "N/A,"
+            if printout:
+                print("Track Name: N/A")
+            if write_csv:
+                trackLine += "N/A,"
 
         if "Artist" in plist["Tracks"][key]:
-            print("Artist Name: " + plist["Tracks"][key]["Artist"])
-            trackLine += "\"" + plist["Tracks"][key]["Artist"] + "\","
+            if printout:
+                print("Artist Name: " + plist["Tracks"][key]["Artist"])
+            if write_csv:
+                trackLine += "\"" + plist["Tracks"][key]["Artist"] + "\","
         else:
-            print("Artist Name: N/A")
-            trackLine += "N/A,"
+            if printout:
+                print("Artist Name: N/A")
+            if write_csv:
+                trackLine += "N/A,"
 
         if "Album" in plist["Tracks"][key]:
-            print("Album Name: " + plist["Tracks"][key]["Album"])
-            trackLine += "\"" + plist["Tracks"][key]["Album"] + "\","
+            if printout:
+                print("Album Name: " + plist["Tracks"][key]["Album"])
+            if write_csv:
+                trackLine += "\"" + plist["Tracks"][key]["Album"] + "\","
         else:
-            print("Album Name: N/A")
-            trackLine += "N/A,"
+            if printout:
+                print("Album Name: N/A")
+            if write_csv:
+                trackLine += "N/A,"
 
         if "Date Added" in plist["Tracks"][key]:
-            print("Date Added: " + str(plist["Tracks"][key]["Date Added"]))
-            trackLine += (str(plist["Tracks"][key]["Date Added"])[:10]) + ","
+            if printout:
+                print("Date Added: " + str(plist["Tracks"][key]["Date Added"]))
+            if write_csv:
+                trackLine += (str(plist["Tracks"][key]["Date Added"])[:10]) + ","
         else:
-            print("Date Added: N/A")
-            trackLine += "N/A,"
+            if printout:
+                print("Date Added: N/A")
+            if write_csv:
+                trackLine += "N/A,"
+
+        if "Total Time" in plist["Tracks"][key]:
+            mill_sec = plist["Tracks"][key]["Total Time"]
+            total_sec = mill_sec / 1000
+            min = int(total_sec // 60)
+            sec = int(total_sec % 60)
+            
+            if sec < 10: # left pad with 0 if sec is less than 10
+                sec = "0" + str(sec)
+            else:
+                sec = str(sec)
+            
+            if printout:
+                print("Time: " + str(min) + ":" + sec)
+            if write_csv:
+                trackLine += str(min) + ":" + sec + ","
+        else:
+            if printout:
+                print("Time: N/A")
+            if write_csv:
+                trackLine += "N/A,"
 
         if "BPM" in plist["Tracks"][key]:
-            print("Beats Per Minute: " + str(plist["Tracks"][key]["BPM"]))
-            trackLine += str(plist["Tracks"][key]["BPM"]) + "\r\n"
+            if printout:
+                print("Beats Per Minute: " + str(plist["Tracks"][key]["BPM"]))
+            if write_csv:
+                trackLine += str(plist["Tracks"][key]["BPM"]) + "\r\n"
         else:
-            print("Beats Per Minute: N/A")
-            trackLine += "N/A\r\n"
+            if printout:
+                print("Beats Per Minute: N/A")
+            if write_csv:
+                trackLine += "N/A\r\n"
 
-        print('\n')
-        fileExport.write(trackLine)
-        trackLine = ""
         
 
-fileExport.close()
+        if printout:
+            print('\n')
+        if write_csv:
+            csv_file_path.write(trackLine)
 
-# print(plist["Date"])
+        trackLine = ""
+        
+if write_csv:
+    csv_file_path.close()
+
+print("Total Tracks Processed: " + str(count))
