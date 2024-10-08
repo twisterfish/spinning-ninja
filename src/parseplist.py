@@ -10,7 +10,7 @@ from pathlib import Path
 #######################################################################
 
 count = 0 # This is a counter for the number of tracks processed
-write_csv = False # Set to True to write to a CSV file
+write_csv = True # Set to True to write to a CSV file
 printout = False # Set to True to print to the console
 
 #######################################################################
@@ -20,14 +20,14 @@ printout = False # Set to True to print to the console
 trackLine = "" # This is the line that will be written to the CSV file
 csv_file_path = None # This is the file that will be written to if used
 
-# This is the file that will be read from - add your own path here
-plist_file_path = Path('../data/Equinox-09-15-24.xml')
+# This is the file that will be read from - add your own path heres
+plist_file_path = Path('../data/iTunes-Library.xml')
 
 # If the flag is set to write to a CSV file, this is the file that will 
 # be written to - add your own path here
 if write_csv:
     csv_file_path = open('../data/iTunes-Export.csv', 'a')
-    trackLine = "TrackName,ArtistName,Album,DateAdded,Time,BPM\r\n"
+    trackLine = "TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n"
     csv_file_path.write(trackLine)
     trackLine = ""
 
@@ -108,6 +108,17 @@ with open(plist_file_path, 'rb') as infile:
             if write_csv:
                 trackLine += "N/A,"
 
+        if "Play Count" in plist["Tracks"][key]:
+            if printout:
+                print("Play Count: " + str(plist["Tracks"][key]["Play Count"]))
+            if write_csv:
+                trackLine += (str(plist["Tracks"][key]["Play Count"])) + ","
+        else:
+            if printout:
+                print("Play Count: N/A")
+            if write_csv:
+                trackLine += "N/A,"
+
         if "BPM" in plist["Tracks"][key]:
             if printout:
                 print("Beats Per Minute: " + str(plist["Tracks"][key]["BPM"]))
@@ -120,7 +131,6 @@ with open(plist_file_path, 'rb') as infile:
                 trackLine += "N/A\r\n"
 
         
-
         if printout:
             print('\n')
         if write_csv:
