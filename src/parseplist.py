@@ -3,6 +3,7 @@
 #######################################################################
 
 import plistlib
+import datetime
 from pathlib import Path
 
 ####################################################################### 
@@ -19,6 +20,8 @@ printout = False # Set to True to print to the console
 
 trackLine = "" # This is the line that will be written to the CSV file
 csv_file_path = None # This is the file that will be written to if used
+today = datetime.datetime.now() # This is the current date and time
+today = today.strftime("%m-%d-%YT%H-%M-%S") # This is the current date and time as a string
 
 # This is the file that will be read from - add your own path heres
 plist_file_path = Path('../data/iTunes-Library.xml')
@@ -26,7 +29,7 @@ plist_file_path = Path('../data/iTunes-Library.xml')
 # If the flag is set to write to a CSV file, this is the file that will 
 # be written to - add your own path here
 if write_csv:
-    csv_file_path = open('../data/iTunes-Export.csv', 'a')
+    csv_file_path = open('../data/' + today + '_Playlist_Export.csv', 'a')
     trackLine = "TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n"
     csv_file_path.write(trackLine)
     trackLine = ""
