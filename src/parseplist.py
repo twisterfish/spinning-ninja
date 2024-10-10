@@ -1,10 +1,22 @@
 #######################################################################
 # Python script to parse an iTunes XML file and output the data to a CSV file
+# Instructions:
+# 1. Open the script in your favorite text editor
+# 2. Change the path to the iTunes XML file on line 47
+# 3. Change the path to the output CSV file on line 53
+# 4. Save the script changes
+# 5. Run the script by typing 'python3 parseplist.py' in the terminal
 #######################################################################
 
 import plistlib
 import datetime
 from pathlib import Path
+
+#######################################################################
+# def lambda_handler(event, context):
+#     print(event)
+#     return 'Notes to convert this to a Lambda function!'
+#######################################################################
 
 ####################################################################### 
 # These are global variables used to control the output of the script
@@ -19,30 +31,30 @@ printout = False # Set to True to print to the console
 #######################################################################
 
 trackLine = "" # This is the line that will be written to the CSV file
-csv_file_path = None # This is the file that will be written to if used
+csv_file_handle = None # This is the file that will be written to if used
 today = datetime.datetime.now() # This is the current date and time
 today = today.strftime("%m-%d-%YT%H-%M-%S") # This is the current date and time as a string
 
-# This is the file that will be read from - add your own path heres
+# This is the file that will be read from - add your own path here
 plist_file_path = Path('../data/iTunes-Library.xml')
-
-# If the flag is set to write to a CSV file, this is the file that will 
-# be written to - add your own path here
-if write_csv:
-    csv_file_path = open('../data/' + today + '_Playlist_Export.csv', 'a')
-    trackLine = "TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n"
-    csv_file_path.write(trackLine)
-    trackLine = ""
+# This is the file that will be written to - add your own path here
+target_csv = Path('../data/' + today + '_Playlist_Export.csv')
 
 #######################################################################
 # This is the main part of the script that reads the plist file
 #######################################################################
 
+# If the flag is set to write to a CSV file, write the header line first
+if write_csv:
+    csv_file_handle = open( target_csv, 'a' )
+    trackLine = "TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n"
+    csv_file_handle.write(trackLine)
+    trackLine = ""
+
+# Open the plist file and load the data
 with open(plist_file_path, 'rb') as infile:
     plist = plistlib.load(infile)
-    
-    #print(plist["Tracks"])
-
+    # Loop through the tracks in the plist file
     for key in plist["Tracks"]:
         count += 1      
 
@@ -137,11 +149,11 @@ with open(plist_file_path, 'rb') as infile:
         if printout:
             print('\n')
         if write_csv:
-            csv_file_path.write(trackLine)
+            csv_file_handle.write(trackLine)
 
         trackLine = ""
         
 if write_csv:
-    csv_file_path.close()
+    csv_file_handle.close()
 
 print("Total Tracks Processed: " + str(count))
