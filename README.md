@@ -3,10 +3,11 @@ This is a basic site for spinning ninja
 
 ## Using AWS S3
 Pros
-1. cheap as hell
+1. cheap, way cheap
 2. minimal knowledge required to update
 3. complete customization available
-4. stable company
+4. Access to a relational database for queries if needed (MySQL)
+5. stable company
 Cons
 1. No WYSIWYG editor available in console
 
@@ -23,6 +24,12 @@ Cons
 6. Some providers are sketch
 7. Most of them host on AWS anyway
 
+# Methods to Update
+1. convert plists to csv and upload to site
+2. upload plists and use a lambda function to convert in place
+3. import csv into a relational database (MySQL) and render dynamic html
+4. upload plist into a bucket and kickoff Lambda to generate html
+  
 ## dynamic Lambda function code
 
 #######################################################################
