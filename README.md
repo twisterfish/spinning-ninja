@@ -20,5 +20,13 @@ Cons
 3. Data imports and exports may be difficult or nonexistant
 4. Dificult learning curve when going outside the template
 5. Customization may be more complex than necessary
+6. Some providers are sketch
+7. Most of them host on AWS anyway
 
 ## dynamic Lambda function code
+
+#######################################################################
+# def lambda_handler(event, context):
+#     print(event)
+#     return 'Notes to convert this to a Lambda function!'
+#######################################################################
