@@ -2,8 +2,8 @@
 # Python script to parse an iTunes XML file and output the data to a CSV file
 # Instructions:
 # 1. Open the script in your favorite text editor
-# 2. Change the path to the iTunes XML file on line 47
-# 3. Change the path to the output CSV file on line 53
+# 2. Change the path to the iTunes XML file on line 34
+# 3. Change the path to the output CSV and SQL files on lines 37 and 40
 # 4. Save the script changes
 # 5. Run the script by typing 'python3 parseplist.py' in the terminal
 #######################################################################
