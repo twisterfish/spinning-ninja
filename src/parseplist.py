@@ -31,7 +31,7 @@ today = today.strftime("%m-%d-%YT%H-%M-%S") # This is the current date and time 
 #######################################################################
 
 # This is the PLIST file that will be read from - add the file path here
-plist_file_path = Path('../data/iTunes-Library.xml')
+plist_file_path = Path('../data/Equinox-09-15-24.xml')
 
 # This is the CSV file that will be written to - add the file path here
 target_csv = Path('../data/' + 'Playlist_Export.' + today + '.csv')
@@ -58,7 +58,7 @@ if write_csv:
 
 if write_sql:
     sql_file_handle = open( target_sql, 'a' )
-    sqlLine = "INSERT INTO playlists (TrackName, ArtistName, Album, DateAdded, Time, Plays, BPM) VALUES " # This is the header line for the SQL file
+    sqlLine = "INSERT INTO playlists (UploadDate,TrackName, ArtistName, Album, DateAdded, Time, Plays, BPM) VALUES " # This is the header line for the SQL file
     sql_file_handle.write(sqlLine)
     sqlLine = "" # Reset the line variable
 
@@ -76,14 +76,14 @@ with open(plist_file_path, 'rb') as infile:
             if write_csv:
                 csvLine += "\"" + plist["Tracks"][key]["Name"] + "\","
             if write_sql:
-                sqlLine += "(\"" + plist["Tracks"][key]["Name"] + "\","
+                sqlLine += "(" + today + ",\"" + plist["Tracks"][key]["Name"] + "\","
         else:    
             if printout:
                 print("Track Name: N/A")
             if write_csv:
                 csvLine += "N/A,"
             if write_sql:
-                sqlLine += "(\"N/A\","
+                sqlLine += "\"N/A\","
 
         if "Artist" in plist["Tracks"][key]:
             if printout:
