@@ -18,7 +18,7 @@ from pathlib import Path
 # Set the flags to True to enable the output for that type
 #######################################################################
 
-write_csv = True # Set to True to write to a CSV file
+write_csv = False # Set to True to write to a CSV file
 write_sql = True # Set to True to write out a SQL import file
 printout = False # Set to True to print to the console
 
@@ -35,10 +35,10 @@ today = today.strftime("%m-%d-%YT%H-%M-%S") # This is the current date and time 
 plist_file_path = Path('../data/Equinox-09-15-24.xml')
 
 # This is the CSV file that will be written to - add the file path here
-target_csv = Path('../data/' + 'Playlist_Export2.' + today + '.csv')
+target_csv = Path('../data/' + 'Playlist_Export.' + today + '.csv')
 
 # This is the SQL file that will be written to - add the file path here
-target_sql = Path('../data/' + 'Playlist_Export2.' + today + '.sql')
+target_sql = Path('../data/' + 'Playlist_Export.' + today + '.sql')
 
 #######################################################################
 # This is the main part of the script that reads the plist file
@@ -58,13 +58,13 @@ parsedDate = "20" + correctformat[2] + "-" + correctformat[0] + "-" + correctfor
 # If the flag is set to write to a CSV file, write the header line first
 if write_csv:
     csv_file_handle = open( target_csv, 'a' )
-    csvLine = "DatePlayed,TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n" # This is the header line for the CSV file
+    csvLine = "date_played,track_name,artist_name,album_name,date_added,track_length,num_plays,beats_per_minute\r\n" # This is the header line for the CSV file
     csv_file_handle.write(csvLine)
     csvLine = "" # Reset the line variable
 
 if write_sql:
     sql_file_handle = open( target_sql, 'a' )
-    sqlLine = "INSERT INTO playlists (DatePlayed,TrackName, ArtistName, Album, DateAdded, Time, Plays, BPM) VALUES \r\n" # This is the header line for the SQL file
+    sqlLine = "INSERT INTO spin_playlists (date_played,track_name, artist_name, album_name, date_added, track_length, num_plays, beats_per_minute) VALUES \r\n" # This is the header line for the SQL file
     sql_file_handle.write(sqlLine)
     sqlLine = "" # Reset the line variable
 
