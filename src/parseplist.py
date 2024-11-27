@@ -61,7 +61,7 @@ if write_csv:
     csvLine = "date_played,track_name,artist_name,album_name,date_added,track_length,num_plays,beats_per_minute\r\n" # This is the header line for the CSV file
     csv_file_handle.write(csvLine)
     csvLine = "" # Reset the line variable
-
+# If the flag is set to write to a SQL file, write the header line first
 if write_sql:
     sql_file_handle = open( target_sql, 'a' )
     sqlLine = "INSERT INTO spin_playlists (date_played,track_name, artist_name, album_name, date_added, track_length, num_plays, beats_per_minute) VALUES \r\n" # This is the header line for the SQL file
