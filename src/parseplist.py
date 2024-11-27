@@ -10,6 +10,7 @@
 
 import plistlib
 import datetime
+import re
 from pathlib import Path
 
 ####################################################################### 
@@ -34,10 +35,10 @@ today = today.strftime("%m-%d-%YT%H-%M-%S") # This is the current date and time 
 plist_file_path = Path('../data/Equinox-09-15-24.xml')
 
 # This is the CSV file that will be written to - add the file path here
-target_csv = Path('../data/' + 'Playlist_Export.' + today + '.csv')
+target_csv = Path('../data/' + 'Playlist_Export2.' + today + '.csv')
 
 # This is the SQL file that will be written to - add the file path here
-target_sql = Path('../data/' + 'Playlist_Export.' + today + '.sql')
+target_sql = Path('../data/' + 'Playlist_Export2.' + today + '.sql')
 
 #######################################################################
 # This is the main part of the script that reads the plist file
@@ -49,16 +50,21 @@ sqlLine = "" # This is the line that will be written to the SQL file
 csv_file_handle = None # This is the CSV file that will be written to if used
 sql_file_handle = None # This is the SQL file that will be written to if used
 
+# Parse the date from the file name and then reformat it to be in the format YYYY-MM-DD
+parsedDate = re.search("[0-9][0-9]-[0-9][0-9]-[0-9][0-9]", plist_file_path.stem).group(0)
+correctformat = parsedDate.split("-")
+parsedDate = "20" + correctformat[2] + "-" + correctformat[0] + "-" + correctformat[1]
+
 # If the flag is set to write to a CSV file, write the header line first
 if write_csv:
     csv_file_handle = open( target_csv, 'a' )
-    csvLine = "TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n" # This is the header line for the CSV file
+    csvLine = "DatePlayed,TrackName,ArtistName,Album,DateAdded,Time,Plays,BPM\r\n" # This is the header line for the CSV file
     csv_file_handle.write(csvLine)
     csvLine = "" # Reset the line variable
 
 if write_sql:
     sql_file_handle = open( target_sql, 'a' )
-    sqlLine = "INSERT INTO playlists (UploadDate,TrackName, ArtistName, Album, DateAdded, Time, Plays, BPM) VALUES " # This is the header line for the SQL file
+    sqlLine = "INSERT INTO playlists (DatePlayed,TrackName, ArtistName, Album, DateAdded, Time, Plays, BPM) VALUES \r\n" # This is the header line for the SQL file
     sql_file_handle.write(sqlLine)
     sqlLine = "" # Reset the line variable
 
@@ -68,15 +74,15 @@ with open(plist_file_path, 'rb') as infile:
     plist = plistlib.load(infile)
     # Loop through the tracks in the plist file
     for key in plist["Tracks"]:
-        count += 1      
+        count += 1  
 
         if "Name" in plist["Tracks"][key]:
             if printout:
                 print("Track Name: " + plist["Tracks"][key]["Name"])
             if write_csv:
-                csvLine += "\"" + plist["Tracks"][key]["Name"] + "\","
+                csvLine += parsedDate + ",\"" + plist["Tracks"][key]["Name"] + "\","
             if write_sql:
-                sqlLine += "(" + today + ",\"" + plist["Tracks"][key]["Name"] + "\","
+                sqlLine += "(" + parsedDate + ",\"" + plist["Tracks"][key]["Name"] + "\","
         else:    
             if printout:
                 print("Track Name: N/A")
@@ -192,7 +198,7 @@ with open(plist_file_path, 'rb') as infile:
         if write_csv:
             csv_file_handle.write(csvLine)
         if write_sql:
-            sql_file_handle.write(sqlLine)
+            sql_file_handle.write(sqlLine + "\r\n")
 
         csvLine = ""
         sqlLine = ""
