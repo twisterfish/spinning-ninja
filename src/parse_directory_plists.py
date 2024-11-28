@@ -1,6 +1,6 @@
 #######################################################################
 # Python script that will search through the specified directory and
-# parse all iTunes PList files and generate CSV or SQL files from the XML
+# parse all iTunes export files and generate CSV or SQL files from the XML
 # data. The script will read the XML data and extract the track name, artist
 # name, album name, date added, track length, number of plays, and beats per
 # minute. The script will then write the data to a CSV or SQL file based on
@@ -29,6 +29,7 @@ import datetime
 import re
 import os
 from pathlib import Path
+import xml.etree.ElementTree as ET
 
 ####################################################################### 
 # These are global variables used to control the output of the script
@@ -68,6 +69,19 @@ target_csv = Path('../data/' + 'Playlist_Export.' + today + '.csv')
 target_sql = Path('../data/' + 'Playlist_Export.' + today + '.sql')
 
 #######################################################################
+# Function to check if a file is an XML file
+#######################################################################
+def is_xml_file(filename):
+    try:
+        ET.parse(filename)
+        return True
+    except ET.ParseError:
+        return False
+    
+#######################################################################
+#######################################################################
+
+#######################################################################
 # This is the main part of the script that reads the plist file
 #######################################################################
 
@@ -87,7 +101,8 @@ if write_sql:
 
 
 for file in os.listdir(search_path):
-    if file.endswith(".xml"):
+    
+    if file.endswith(".xml") and is_xml_file(os.path.join(search_path, file)):
         # Print the file name to the console
         print(os.path.join(search_path, file))
         # Set the path to the plist file
@@ -235,8 +250,7 @@ for file in os.listdir(search_path):
         # Close the plist file so we don't leak file handles
         infile.close() 
     else:
-        print("No plist files found")
-        print(search_path)
+        print("This is not a valid XML file: " + os.path.join(search_path, file). __str__())
             
 if write_csv:
     csv_file_handle.close()
