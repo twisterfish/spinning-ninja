@@ -207,7 +207,7 @@ if write_csv:
     csv_file_handle.close()
 if write_sql:
     # Strip the last comma and close the file
-    sql_file_handle.write( sqlLine[:-3] + ";")
+    sql_file_handle.write( sqlLine[: -3] + ";")
     sql_file_handle.close()
 
 print("Total Tracks Processed: " + str(count))
