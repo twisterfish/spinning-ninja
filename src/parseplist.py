@@ -82,7 +82,7 @@ with open(plist_file_path, 'rb') as infile:
             if write_csv:
                 csvLine += parsedDate + ",\"" + plist["Tracks"][key]["Name"] + "\","
             if write_sql:
-                sqlLine += "(" + parsedDate + ",\"" + plist["Tracks"][key]["Name"] + "\","
+                sqlLine += "(\"" + parsedDate + "\",\"" + plist["Tracks"][key]["Name"] + "\","
         else:    
             if printout:
                 print("Track Name: N/A")
@@ -126,9 +126,9 @@ with open(plist_file_path, 'rb') as infile:
             if printout:
                 print("Date Added: " + str(plist["Tracks"][key]["Date Added"]))
             if write_csv:
-                csvLine += (str(plist["Tracks"][key]["Date Added"])[:10]) + ","
+                csvLine += "\"" + (str(plist["Tracks"][key]["Date Added"])[:10]) + "\","
             if write_sql:
-                sqlLine += (str(plist["Tracks"][key]["Date Added"])[:10]) + ","
+                sqlLine += "\"" + (str(plist["Tracks"][key]["Date Added"])[:10]) + "\","
         else:
             if printout:
                 print("Date Added: N/A")
