@@ -206,8 +206,12 @@ with open(plist_file_path, 'rb') as infile:
 if write_csv:
     csv_file_handle.close()
 if write_sql:
-    # Strip the last comma and close the file
-    sql_file_handle.write( sqlLine[: -3] + ";")
+    # Remove the last comma and add a semicolon to the end of the file
+    # This is needed to make the SQL file importable to a DB
+    sql_file_handle.seek(sql_file_handle.tell() - 3, os.SEEK_SET)
+    sql_file_handle.truncate()
+    sql_file_handle.seek(0, os.SEEK_END)
+    sql_file_handle.write(";")
     sql_file_handle.close()
 
 print("Total Tracks Processed: " + str(count))
