@@ -101,7 +101,7 @@ if write_sql:
 
 
 for file in os.listdir(search_path):
-
+    
     if file.endswith(".xml") and is_xml_file(os.path.join(search_path, file)):
         # Print the file name to the console
         print(os.path.join(search_path, file))
@@ -121,27 +121,29 @@ for file in os.listdir(search_path):
                 count += 1  
 
                 if "Name" in plist["Tracks"][key]:
+                    scrubbedField = plist["Tracks"][key]["Name"].replace("\"", "")                     
                     if printout:
-                        print("Track Name: " + plist["Tracks"][key]["Name"])
+                        print("Track Name: " + scrubbedField )
                     if write_csv:
-                        csvLine += parsedDate + ",\`" + plist["Tracks"][key]["Name"] + "\`,"
+                        csvLine += parsedDate + ",\"" + scrubbedField + "\","
                     if write_sql:
-                        sqlLine += "(\`" + parsedDate + "\`,\`" + plist["Tracks"][key]["Name"] + "\`,"
+                        sqlLine += "(\"" + parsedDate + "\",\"" + scrubbedField + "\","
                 else:    
                     if printout:
                         print("Track Name: N/A")
                     if write_csv:
                         csvLine += "N/A,"
                     if write_sql:
-                        sqlLine += "\`N/A\`,"
+                        sqlLine += "\"N/A\","
 
                 if "Artist" in plist["Tracks"][key]:
+                    scrubbedField = plist["Tracks"][key]["Artist"].replace("\"", "") 
                     if printout:
-                        print("Artist Name: " + plist["Tracks"][key]["Artist"])
+                        print("Artist Name: " + scrubbedField)
                     if write_csv:
-                        csvLine += "\`" + plist["Tracks"][key]["Artist"] + "\`,"
+                        csvLine += "\"" + scrubbedField + "\","
                     if write_sql:
-                        sqlLine += "\`" + plist["Tracks"][key]["Artist"] + "\`,"
+                        sqlLine += "\"" + scrubbedField + "\","
                     
                 else:
                     if printout:
@@ -149,37 +151,38 @@ for file in os.listdir(search_path):
                     if write_csv:
                         csvLine += "N/A,"
                     if write_sql:
-                        sqlLine += "\`N/A\`,"
+                        sqlLine += "\"N/A\","
 
                 if "Album" in plist["Tracks"][key]:
+                    scrubbedField = plist["Tracks"][key]["Album"].replace("\"", "")  
                     if printout:
-                        print("Album Name: " + plist["Tracks"][key]["Album"])
+                        print("Album Name: " + scrubbedField)
                     if write_csv:
-                        csvLine += "\`" + plist["Tracks"][key]["Album"] + "\`,"
+                        csvLine += "\"" + scrubbedField + "\","
                     if write_sql:
-                        sqlLine += "\`" + plist["Tracks"][key]["Album"] + "\`,"
+                        sqlLine += "\"" + scrubbedField + "\","
                 else:
                     if printout:
                         print("Album Name: N/A")
                     if write_csv:
                         csvLine += "N/A,"
                     if write_sql:
-                        sqlLine += "\`N/A\`,"
+                        sqlLine += "\"N/A\","
 
                 if "Date Added" in plist["Tracks"][key]:
                     if printout:
                         print("Date Added: " + str(plist["Tracks"][key]["Date Added"]))
                     if write_csv:
-                        csvLine += "\`" + (str(plist["Tracks"][key]["Date Added"])[:10]) + "\`,"
+                        csvLine += "\"" + (str(plist["Tracks"][key]["Date Added"])[:10]) + "\","
                     if write_sql:
-                        sqlLine += "\`" + (str(plist["Tracks"][key]["Date Added"])[:10]) + "\`,"
+                        sqlLine += "\"" + (str(plist["Tracks"][key]["Date Added"])[:10]) + "\","
                 else:
                     if printout:
                         print("Date Added: N/A")
                     if write_csv:
                         csvLine += "N/A,"
                     if write_sql:
-                        sqlLine += "\`N/A\`,"
+                        sqlLine += "\"N/A\","
 
                 if "Total Time" in plist["Tracks"][key]:
                     mill_sec = plist["Tracks"][key]["Total Time"]
@@ -197,14 +200,14 @@ for file in os.listdir(search_path):
                     if write_csv:
                         csvLine += str(min) + ":" + sec + ","
                     if write_sql:
-                        sqlLine += "\`" + str(min) + ":" + sec + "\`,"
+                        sqlLine += "\"" + str(min) + ":" + sec + "\","
                 else:
                     if printout:
                         print("Time: N/A")
                     if write_csv:
                         csvLine += "N/A,"
                     if write_sql:
-                        sqlLine += "\`N/A\`,"
+                        sqlLine += "\"N/A\","
 
                 if "Play Count" in plist["Tracks"][key]:
                     if printout:
@@ -219,7 +222,7 @@ for file in os.listdir(search_path):
                     if write_csv:
                         csvLine += "N/A,"
                     if write_sql:
-                        sqlLine += "\`N/A\`,"
+                        sqlLine += "\"N/A\","
 
                 if "BPM" in plist["Tracks"][key]:
                     if printout:
@@ -234,7 +237,7 @@ for file in os.listdir(search_path):
                     if write_csv:
                         csvLine += "N/A\r\n"
                     if write_sql:
-                        sqlLine += "\`N/A\`),"
+                        sqlLine += "\"N/A\"),"
 
                 
                 if printout:
