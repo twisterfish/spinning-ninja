@@ -1,11 +1,27 @@
 #######################################################################
-# Python script to parse an iTunes XML file and output the data to a CSV file
+# Python script to parse an iTunes XML file specified and generate 
+# CSV or SQL files from the XML.
+# The script will read the XML data and extract the track name, artist
+# name, album name, date added, track length, number of plays, and beats per
+# minute. The script will then write the data to a CSV or SQL file based on
+# the flags set in the script. The script will also print the data to the
+# console if the printout flag is set to True.  
+# This script is designed to be run from the command line and will require 
+# the user to modify the path to the iTunes XML file, the output CSV and SQL files,
+# and the flags to control the output of the script. The script will also
+# generate a timestamp to append to the output file names to ensure that
+# the files are unique. The script will use the file name to extract the date
+# that the playlist was created and then reformat the date to be in the format
+# YYYY-MM-DD. 
 # Instructions:
 # 1. Open the script in your favorite text editor
-# 2. Change the path to the iTunes XML file on line 34
-# 3. Change the path to the output CSV and SQL files on lines 37 and 40
-# 4. Save the script changes
-# 5. Run the script by typing 'python3 parseplist.py' in the terminal
+# 2. Set the flags to true or false to control the output of the script
+# 3. Change the path to the directory where the iTunes XML files are stored
+#    in the variable 'plist_file_path' in the paths section of the script
+# 4. Change the path to the output CSV and/or SQL files you wish to create
+#    in the variables 'target_csv'and/or 'target_sql' in the paths section of the script
+# 5. Save the script changes
+# 6. Run the script by typing 'python3 parseplist.py' in the terminal
 #######################################################################
 
 import plistlib
