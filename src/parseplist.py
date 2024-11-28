@@ -11,6 +11,7 @@
 import plistlib
 import datetime
 import re
+import os
 from pathlib import Path
 
 ####################################################################### 
@@ -67,7 +68,6 @@ if write_sql:
     sqlLine = "INSERT INTO spin_playlists (date_played,track_name, artist_name, album_name, date_added, track_length, num_plays, beats_per_minute) VALUES \r\n" # This is the header line for the SQL file
     sql_file_handle.write(sqlLine)
     sqlLine = "" # Reset the line variable
-
 
 # Open the plist file and load the data
 with open(plist_file_path, 'rb') as infile:
@@ -206,7 +206,8 @@ with open(plist_file_path, 'rb') as infile:
 if write_csv:
     csv_file_handle.close()
 if write_sql:
-    sql_file_handle.write(";")
+    # Strip the last comma and close the file
+    sql_file_handle.write( sqlLine[:-3] + ";")
     sql_file_handle.close()
 
 print("Total Tracks Processed: " + str(count))
